@@ -14,7 +14,7 @@
   }
 }
 
-.root + * {
+.root+* {
   --c7: none;
 }
 
@@ -74,5 +74,24 @@
   .authorizationImg {
     margin: auto;
     width: 100%;
+  }
+}
+
+.posts {
+  margin: auto;
+}
+
+.postsImages {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+
+  img {
+    width: fit-content;
+    margin: auto;
+    max-width: 100%;
   }
 }

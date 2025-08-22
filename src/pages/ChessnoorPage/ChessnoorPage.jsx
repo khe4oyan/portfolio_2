@@ -12,6 +12,11 @@ import editUserProfile from '../../assets/chessnoorImg/Edited user profile/1440 
 import userProfilePage from '../../assets/chessnoorImg/User Profile Page/1440 px.png';
 import chat_1 from '../../assets/chessnoorImg/Chat with user/1440 px.png';
 import chat_2 from '../../assets/chessnoorImg/Chat with user/1440 px(1).png';
+import post from '../../assets/chessnoorImg/post/post (1).png';
+import post2 from '../../assets/chessnoorImg/post/post (2).png';
+import post3 from '../../assets/chessnoorImg/post/post (3).png';
+import post4 from '../../assets/chessnoorImg/User Home Page/1.png';
+import post5 from '../../assets/chessnoorImg/User Profile Page 2/1.png';
 
 // styles
 import classes from './styles.module.css';
@@ -103,8 +108,16 @@ export default function ChessnoorPage() {
       />
 
 
-      <div>
-        <h2 classname={classes.headerText}>Posts</h2>
+      <div className={classes.posts}>
+        <h2 className={classes.headerText}>Posts</h2>
+
+        <div className={classes.postsImages}>
+          <img src={post} alt="" />
+          <img src={post2} alt="" />
+          <img src={post3} alt="" />
+          <img src={post4} alt="" />
+          <img src={post5} alt="" />
+        </div>
       </div>
     </div>
   )
