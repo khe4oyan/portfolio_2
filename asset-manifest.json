@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio_2/static/css/main.4b57fd55.css",
+    "main.js": "/portfolio_2/static/js/main.865bc16f.js",
+    "static/media/cleanUpReact.png": "/portfolio_2/static/media/cleanUpReact.014ba88a0ce9cb219a1b.png",
+    "static/media/FilmHub.png": "/portfolio_2/static/media/FilmHub.e9839718416e9891adbe.png",
+    "static/media/fastCssCopy.png": "/portfolio_2/static/media/fastCssCopy.481dd5f1db60131bf34e.png",
+    "static/media/photobomber.png": "/portfolio_2/static/media/photobomber.d5d8039a524d973b0c57.png",
+    "static/media/fomponent.png": "/portfolio_2/static/media/fomponent.e89886f01d1cd21e212d.png",
+    "static/media/learnProgramming.png": "/portfolio_2/static/media/learnProgramming.7dd47c61a70b8e10464f.png",
+    "static/media/svgEditor.png": "/portfolio_2/static/media/svgEditor.1737ff9487e283a0cc7e.png",
+    "static/media/interpreter.png": "/portfolio_2/static/media/interpreter.95ff5d6e507e859d7d22.png",
+    "static/media/CraftSell.png": "/portfolio_2/static/media/CraftSell.c404d4fc59413912df39.png",
+    "static/media/discordBot.png": "/portfolio_2/static/media/discordBot.e5d6b56742604067ccb8.png",
+    "index.html": "/portfolio_2/index.html",
+    "main.4b57fd55.css.map": "/portfolio_2/static/css/main.4b57fd55.css.map",
+    "main.865bc16f.js.map": "/portfolio_2/static/js/main.865bc16f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b57fd55.css",
+    "static/js/main.865bc16f.js"
+  ]
+}
