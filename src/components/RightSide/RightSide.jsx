@@ -50,13 +50,13 @@ export default function RightSide() {
         ))}
       </div>
 
-      <a
+      {/* <a
         className={classes.linkCV}
         href="/Suren Khechoyan CV.pdf"
         target="_blank"
       >
         View Full Resume <SvgIcon iconName="arrowRight" />
-      </a>
+      </a> */}
 
       <div className={classes.projects} id="projects">
         <h2 className={classes.sectionHeaderText}>Projects</h2>

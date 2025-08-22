@@ -20,8 +20,8 @@ export default function LeftSide() {
     { icon: "github", link: "https://github.com/khe4oyan" },
     { icon: "linkedIn", link: "https://www.linkedin.com/in/khe4oyan/" },
     { icon: "npm", link: "https://www.npmjs.com/~nerusnotfound" },
-    { icon: "vscode", link: "https://marketplace.visualstudio.com/publishers/khechoyan",},
-    { icon: "telegram", link: "https://t.me/+WfJH-Lbgunw0ZmNi",},
+    { icon: "vscode", link: "https://marketplace.visualstudio.com/publishers/khechoyan", },
+    { icon: "telegram", link: "https://t.me/+WfJH-Lbgunw0ZmNi", },
   ];
 
   useEffect(() => {
@@ -64,18 +64,26 @@ export default function LeftSide() {
         </div>
         <div className={classes.navigation}>
           {navigation.map((link, i) => (
-            <a
-              href={link.id}
-              className={`${classes.link} ${
-                i === activeSectionInd && classes.activeLink
-              }`}
+            // <a
+            //   href={link.id}
+            //   className={`${classes.link} ${
+            //     i === activeSectionInd && classes.activeLink
+            //   }`}
+            //   key={i}
+            //   onClick={() => setActiveSectionInd(i)}
+            //   rel="noreferrer"
+            // >
+            //   <div className={classes.linkLine}></div>
+            //   <span className={classes.linkTitle}>{link.title}</span>
+            // </a>
+
+            <div
+              className={`${classes.link} ${i === activeSectionInd && classes.activeLink}`}
               key={i}
-              onClick={() => setActiveSectionInd(i)}
-              rel="noreferrer"
             >
               <div className={classes.linkLine}></div>
               <span className={classes.linkTitle}>{link.title}</span>
-            </a>
+            </div>
           ))}
         </div>
       </div>
