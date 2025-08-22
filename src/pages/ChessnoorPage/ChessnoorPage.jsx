@@ -6,6 +6,8 @@ import signInImg from '../../assets/chessnoorImg/Sign  in/1440px.png'
 import signInErrImg from '../../assets/chessnoorImg/Sign  in/Error 1440px.png'
 import emailVerifyImg from '../../assets/chessnoorImg/Verify email with code/1440px.png'
 import emailVerifyLinkImg from '../../assets/chessnoorImg/Verify Email with link/1440px.png'
+import createGame from '../../assets/chessnoorImg/Create Game/1440 px.png';
+import playChessVsBot from '../../assets/chessnoorImg/Play Chess vs Computer/1440 px.png';
 
 // styles
 import classes from './styles.module.css';
@@ -17,6 +19,11 @@ const authorizationData = [
   signInErrImg,
   emailVerifyImg,
   emailVerifyLinkImg,
+];
+
+const gamePreviewData = [
+  createGame,
+  playChessVsBot,
 ];
 
 export default function ChessnoorPage() {
@@ -61,19 +68,31 @@ export default function ChessnoorPage() {
         </div>
       </div>
 
-      <div className={classes.authorization}>
-        <h2 className={classes.headerText}>Authorization pages</h2>
+      <SectionShow
+        headerText="Authorization pages"
+        data={authorizationData}
+      />
 
-        {
-          authorizationData.map((img, ind) =>
-            <img
-              className={classes.authorizationImg}
-              src={img}
-              key={ind}
-            />
-          )
-        }
-      </div>
+      <SectionShow
+        headerText="Game Preview"
+        data={gamePreviewData}
+      />
     </div>
   )
+}
+
+const SectionShow = ({ headerText, data }) => {
+  return (
+    <div className={classes.authorization}>
+      <h2 className={classes.headerText}>{headerText}</h2>
+
+      {data.map((img, ind) =>
+        <img
+          className={classes.authorizationImg}
+          src={img}
+          key={ind}
+        />
+      )}
+    </div>
+  );
 }
