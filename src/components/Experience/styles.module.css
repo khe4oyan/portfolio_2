@@ -1,0 +1,134 @@
+.root {
+  transition: .1s;
+  color: var(--c2);
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 100px auto;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+    
+  &:hover {
+    .info {
+      .titleBox {
+        color: var(--c4);
+        .companyName {
+          .titleIcon {
+            transform: translate(4px, -4px);
+          }
+        }
+      } 
+    }
+  } 
+
+  .projectLink {
+    text-decoration: none;
+  }
+
+  .dateBox {
+    .date {
+      margin-top: 2px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      color: var(--c2);
+    }
+  }
+
+  .info {
+    .titleBox {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      font-weight: bold;
+      color: var(--c3);
+      /* .title {} */
+      .companyName {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        .titleIcon {
+          transition: .3s;
+        }
+      }
+    }
+    .whatIDo {
+      color: var(--c2);
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .links {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .link {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: bold;
+        color: var(--c3);
+        text-decoration: none;
+        padding: 5px 0;
+        font-size: 15px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        background: none;
+        outline: none; 
+        text-align: left;
+
+
+        &:hover {
+          color: var(--c4);
+        }
+      }
+    }
+  }
+}
+
+
+@media (width > 1000px) {
+  .root {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 100px auto;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0);
+      
+    &:hover {
+      opacity: 1 !important;
+      border-top: 1px solid rgba(255, 255, 255, 0.116);
+      box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1);
+      background-color: var(--c6);
+    } 
+  }
+}
+
+@media (width < 1000px) {
+  .root {
+    padding: 0;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (width < 640px) {
+  .root {
+    display: block;
+
+    .dateBox {
+      .date {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

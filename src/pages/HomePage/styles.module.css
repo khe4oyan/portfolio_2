@@ -1,0 +1,13 @@
+@media (width > 1000px) {
+  .root {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+@media (width < 1000px) {
+  .root {
+    padding: 4rem 2rem 2rem;
+  }
+}

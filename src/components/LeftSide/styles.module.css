@@ -1,0 +1,153 @@
+.root {
+  top: 6rem;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  
+  .infoBox{
+    .header {
+      .name {
+        font-size: 2.8rem;
+      }
+      .profession {
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .title {
+        margin-top: 20px;
+        color: var(--c2);
+        width: 320px;
+        line-height: 1.5rem;
+      }
+    }
+  
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .link {
+        display: flex;
+        align-items: center;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: .8rem;
+        letter-spacing: 2px;
+        text-decoration: none;
+        padding: .3rem 0;
+        gap: 1rem;
+        opacity: .6;
+
+        .linkLine {
+          width: 32px;
+          height: 1px;
+          background: var(--c3);
+        }
+        .linkTitle {
+          color: var(--c3);
+        }
+      }
+
+      .link:hover,
+      .activeLink {
+        opacity: 1;
+        .linkLine {
+          width: 64px;
+        }
+      }
+    }
+  }
+  .linkBox {
+    margin-top: 1rem;
+    .links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: fit-content;
+      gap: 4px;
+
+      .link {
+        position: relative;
+
+        .icon {
+          color: var(--c2);
+          fill: var(--c2);
+          --size: 30px;
+          width: var(--size);
+          height: var(--size);
+          
+          &:hover {
+            color: var(--c3);
+            fill: var(--c3);
+          }
+        }
+        &:nth-child(3) {
+          .icon {
+            --size: 43px;
+          }
+        }
+        &:nth-child(4) {
+          .icon {
+            --size: 23px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width > 1000px) {
+  .root {
+    position: sticky;
+    justify-content: space-between;
+    height: calc(100dvh - 12rem);
+    
+    .infoBox{
+      .navigation {
+        margin-top: 5rem;
+      }
+    }
+  }
+}
+
+@media (width < 1000px) {
+  .root {
+    height: fit-content;
+    padding-bottom: 6rem;
+    
+    .infoBox{
+      .navigation {
+        display: none;
+      }
+    }
+    .linkBox {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (width < 445px) {
+  .root {
+    .infoBox{
+      .header {
+        .name {
+          font-size: calc(1vh + 2vw * 3.5);
+        }
+      }
+    }
+  }
+}
+
+@media (width < 353px) {
+  .root {
+    .infoBox{
+      .header {
+        .name {
+          font-size: calc(1vh + 2vw * 2.9);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  .tag {
+    padding: 5px 10px;
+    background: var(--c5);
+    color: var(--c4);
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
