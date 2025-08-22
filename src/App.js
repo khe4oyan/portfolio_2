@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 // pages
 import HomePage from "./pages/HomePage";
 // import ArchivePage from './pages/ArchivePage';
+import ChessnoorPage from './pages/ChessnoorPage';
 import NotFoundPage from "./pages/NotFoundPage";
 
 // components
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path={ROUTES.HOME} element={<HomePage />} />
         {/* <Route path={ROUTES.ARCHIVE} element={<ArchivePage />}/> */}
+        <Route path={ROUTES.CHESSNOOR} element={<ChessnoorPage />} />
         <Route path={ROUTES.NOT_FOUND} element={<NotFoundPage />} />
       </Routes>
       <MouseBox />

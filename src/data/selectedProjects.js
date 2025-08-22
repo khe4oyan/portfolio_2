@@ -7,11 +7,21 @@ import fomponentImg from '../assets/img/fomponent.png';
 import fastCssCopyImg from '../assets/img/fastCssCopy.png';
 import interpreterImg from '../assets/img/interpreter.png';
 import cleanUpReactImg from '../assets/img/cleanUpReact.png';
-
 import photobomberImg from '../assets/img/photobomber.png';
 import svgEditorImg from '../assets/img/svgEditor.png';
+import chessnoorImg from '../assets/img/chessnoor.png';
+
+import ROUTES from '../pages/routes';
 
 const selectedProjectsData = [
+  {
+    link: `#${ROUTES.CHESSNOOR}`,
+    imgSrc: chessnoorImg,
+    title: "Chessnoor",
+    whatIs: "Social platform for chess lovers",
+    extensionName: null,
+    tags: ["React JS", "redux js", "react-redux", "@reduxjs/toolkit", "axios", "styled-components"],
+  },
   {
     link: "https://github.com/khe4oyan/learn_programming_site",
     imgSrc: learnProgrammingImg,
