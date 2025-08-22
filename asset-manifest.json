@@ -1,23 +1,34 @@
 {
   "files": {
-    "main.css": "./static/css/main.4b57fd55.css",
-    "main.js": "./static/js/main.c02dec94.js",
+    "main.css": "./static/css/main.7dc0e8d0.css",
+    "main.js": "./static/js/main.fc9707e4.js",
+    "static/media/header.png": "./static/media/header.628a81d35535a8d86d5b.png",
+    "static/media/Error 1440px.png": "./static/media/Error 1440px.e2b8409616c3defe60ba.png",
+    "static/media/1440px(1).png": "./static/media/1440px(1).804465be785bca38ef9b.png",
+    "static/media/1440px.png": "./static/media/1440px.fea4fbed583fff505c3f.png",
+    "static/media/1440 px.png": "./static/media/1440 px.86905c52971c11829916.png",
     "static/media/cleanUpReact.png": "./static/media/cleanUpReact.014ba88a0ce9cb219a1b.png",
     "static/media/FilmHub.png": "./static/media/FilmHub.e9839718416e9891adbe.png",
     "static/media/fastCssCopy.png": "./static/media/fastCssCopy.481dd5f1db60131bf34e.png",
+    "static/media/1.png": "./static/media/1.313d1fa014df785535c9.png",
+    "static/media/post (3).png": "./static/media/post (3).c0c3092fa54bb3f3331c.png",
     "static/media/photobomber.png": "./static/media/photobomber.d5d8039a524d973b0c57.png",
+    "static/media/post (2).png": "./static/media/post (2).b2d3e042918476d22632.png",
     "static/media/fomponent.png": "./static/media/fomponent.e89886f01d1cd21e212d.png",
     "static/media/learnProgramming.png": "./static/media/learnProgramming.7dd47c61a70b8e10464f.png",
+    "static/media/chessnoor.png": "./static/media/chessnoor.d1c9eabd1cac82846d1d.png",
     "static/media/svgEditor.png": "./static/media/svgEditor.1737ff9487e283a0cc7e.png",
+    "static/media/1440 px(1).png": "./static/media/1440 px(1).a2151df4697eb089614c.png",
     "static/media/interpreter.png": "./static/media/interpreter.95ff5d6e507e859d7d22.png",
     "static/media/CraftSell.png": "./static/media/CraftSell.c404d4fc59413912df39.png",
+    "static/media/post (1).png": "./static/media/post (1).c2a0a599fd1a66765513.png",
     "static/media/discordBot.png": "./static/media/discordBot.e5d6b56742604067ccb8.png",
     "index.html": "./index.html",
-    "main.4b57fd55.css.map": "./static/css/main.4b57fd55.css.map",
-    "main.c02dec94.js.map": "./static/js/main.c02dec94.js.map"
+    "main.7dc0e8d0.css.map": "./static/css/main.7dc0e8d0.css.map",
+    "main.fc9707e4.js.map": "./static/js/main.fc9707e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b57fd55.css",
-    "static/js/main.c02dec94.js"
+    "static/css/main.7dc0e8d0.css",
+    "static/js/main.fc9707e4.js"
   ]
 }
