@@ -8,6 +8,10 @@ import emailVerifyImg from '../../assets/chessnoorImg/Verify email with code/144
 import emailVerifyLinkImg from '../../assets/chessnoorImg/Verify Email with link/1440px.png'
 import createGame from '../../assets/chessnoorImg/Create Game/1440 px.png';
 import playChessVsBot from '../../assets/chessnoorImg/Play Chess vs Computer/1440 px.png';
+import editUserProfile from '../../assets/chessnoorImg/Edited user profile/1440 px.png';
+import userProfilePage from '../../assets/chessnoorImg/User Profile Page/1440 px.png';
+import chat_1 from '../../assets/chessnoorImg/Chat with user/1440 px.png';
+import chat_2 from '../../assets/chessnoorImg/Chat with user/1440 px(1).png';
 
 // styles
 import classes from './styles.module.css';
@@ -24,6 +28,16 @@ const authorizationData = [
 const gamePreviewData = [
   createGame,
   playChessVsBot,
+];
+
+const userProfile = [
+  userProfilePage,
+  editUserProfile,
+];
+
+const chat = [
+  chat_2,
+  chat_1,
 ];
 
 export default function ChessnoorPage() {
@@ -74,9 +88,24 @@ export default function ChessnoorPage() {
       />
 
       <SectionShow
-        headerText="Game Preview"
+        headerText="Game board"
         data={gamePreviewData}
       />
+
+      <SectionShow
+        headerText="User profile"
+        data={userProfile}
+      />
+
+      <SectionShow
+        headerText="Chat"
+        data={chat}
+      />
+
+
+      <div>
+        <h2 classname={classes.headerText}>Posts</h2>
+      </div>
     </div>
   )
 }
